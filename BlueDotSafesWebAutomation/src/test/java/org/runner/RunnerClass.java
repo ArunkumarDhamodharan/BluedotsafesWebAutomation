@@ -9,12 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\Arun\\eclipse-workspace\\BlueDotSafesWebAutomation\\BlueDotSafesWebAutomation\\src\\test\\resources\\Feature\\Header.feature",
+@CucumberOptions(features = "C:\\Users\\arunk\\git\\BluedotsafesWebAutomation\\BlueDotSafesWebAutomation\\src\\test\\resources\\Feature\\Header.feature",
 glue = {"org.step","org.hooks"}, 
 monochrome = true, 
 dryRun = false, 
 snippets = SnippetType.CAMELCASE,
-tags="@Header02",
+//tags="@Home01",
 plugin = {
 		"html:target\\HTMLReport", "junit:target\\xmlReport.xml", "json:target\\JsonReport.json" })
 

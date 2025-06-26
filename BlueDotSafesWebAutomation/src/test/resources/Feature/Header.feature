@@ -14,9 +14,6 @@ Feature: Verify the header section navigation and search functionality
 
     When User clicks the site logo
     Then The homepage should reload
-    
-    When User clicks the Save Up to 15% on Featured Safes! Shop Now link 
-    Then User should be redirect to security sale page 
 
     When User clicks the phone number field
     Then The phone dialer box should open
@@ -39,38 +36,26 @@ Feature: Verify the header section navigation and search functionality
     When User clicks header menu items and submenu pages
     Then Each link should navigate to its respective page
     
-  
+ 
 @Header03 
-  Scenario: Verify Search Field Availability and Editability
+Scenario: Verify Complete Search Field Functionality
 
-    Given I am on the home page
-    When I see the search field
-    Then The search field should be visible and editable
- 
-@Header04
-  Scenario: Verify Product Selection from Dropdown
+  Given I am on the home page
+  When I see the search field
+  Then The search field should be visible and editable
 
-    When I select any product from the dropdown area
-    Then The selected product should be visible in the serach field 
-    When User click the search button after select the dropdown 
-    Then The user should redirect to respective product page
-  
-@Header05 
-  Scenario: Verify Product Search with Valid Input
+  When I select any product from the dropdown area
+  Then The selected product should be visible in the search field
+  When User clicks the search button after selecting the product from dropdown
+  Then The user should be redirected to the respective product page
 
-    When I search for a product using a valid product name
-    Then I should see search results containing related products
- 
-@Header06  
-  Scenario: Verify Search with Special Characters
+  When I search for a product using a valid product name
+  Then I should see search results containing related products
 
-    When I enter special characters in the search field
-    Then I should see a "no results found" page
-    
-@Header07
-  Scenario: Verify Search with Numeric Characters
+  When I enter special characters in the search field
+  Then I should see a "no results found" page
 
-    When I enter numeric characters in the search field
-    Then I should see a "no results found" page	
+  When I enter numeric characters in the search field
+  Then I should see a "no results found" page
     
   
